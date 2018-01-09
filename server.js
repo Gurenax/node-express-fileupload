@@ -1,10 +1,13 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const fileUpload = require('express-fileupload')
 
 const server = express()
 
 // Middleware Plugins
 server.use(bodyParser.json())
+server.use(fileUpload())
+server.use(express.static('public')) // Just for testing, use a static html
 
 // Routes
 server.use('/', [
