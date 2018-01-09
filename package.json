@@ -5,12 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "express-fileupload": "^0.3.0"
   },
   "devDependencies": {
     "nodemon": "^1.14.9"
   },
   "scripts": {
-    "dev" : "nodemon server.js"
+    "dev": "nodemon server.js"
   }
 }
